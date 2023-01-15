@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_createGroup">
+
+    <fragment
+        android:id="@+id/nav_createGroup"
+        android:name="com.erenbelli.finalmessage.ui.CreateGroupFragment"
+        android:label="Grup Oluştur"
+        tools:layout="@layout/fragment_create_group" />
+
+    <fragment
+        android:id="@+id/nav_addMember"
+        android:name="com.erenbelli.finalmessage.ui.AddGroupMemberFragment"
+        android:label="Üye Ekle"
+        tools:layout="@layout/fragment_add_group_member" />
+
+    <fragment
+        android:id="@+id/nav_createMessage"
+        android:name="com.erenbelli.finalmessage.ui.CreateMessageFragment"
+        android:label="Mesaj Oluştur"
+        tools:layout="@layout/fragment_create_message" />
+
+    <fragment
+        android:id="@+id/nav_sendMessage"
+        android:name="com.erenbelli.finalmessage.ui.SendMesaggeFragment"
+        android:label="Mesaj Oluştur"
+        tools:layout="@layout/fragment_create_message" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.erenbelli.finalmessage.ui.LogOutFragment"
+        android:label="Grup Oluştur"
+        tools:layout="@layout/fragment_log_out" />
+
+
+</navigation>

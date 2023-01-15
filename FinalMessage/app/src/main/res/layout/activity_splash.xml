@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="15sp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:background="@color/bg"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="220sp"
+        android:layout_height="220sp"
+        android:gravity="center"
+        android:layout_marginBottom="50sp"
+        app:srcCompat="@drawable/mssging" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_marginTop="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GİRİŞ YAP"
+        android:layout_gravity="center" />
+
+
+    <Button
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KAYIT OL"
+        android:layout_marginTop="30sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100sp"/>
+
+    <EditText
+        android:id="@+id/editTextAdNumara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="40sp"
+        android:inputType="textPersonName"
+        android:textStyle="italic"
+        android:text="Yusuf Eren Belli / 201913709039"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity = "center"
+    android:padding="8sp"
+    tools:context=".ui.CreateGroupFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Grup Adı"
+        android:id="@+id/groupName" />
+
+    <EditText
+        android:id="@+id/editTextGroupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:text="Grup Simgesi"
+        android:id="@+id/groupLogo" />
+
+    <ImageView
+        android:id="@+id/imageGroupLogo"
+        android:layout_gravity="left"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:src="@drawable/grup" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grup Açıklaması"
+        android:layout_marginTop="30sp"
+        android:id="@+id/groupEx" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/expBlank"
+            android:layout_height="90sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/createGroupBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:text="GRUP OLUŞTUR" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gruplar"
+        android:layout_marginTop="30sp"
+        android:id="@+id/groups" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/createGroupItems"
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
